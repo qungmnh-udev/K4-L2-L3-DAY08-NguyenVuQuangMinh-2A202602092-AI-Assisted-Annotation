@@ -1,0 +1,28 @@
+round,frame_id,object,action,rule_or_reason
+1,frame_0099.jpg,SUV bật đèn pha giữa đường (x~430 y~660),added,Thiếu nhãn; thấy rõ thân xe và đèn pha di chuyển tới ở cự ly gần theo GUIDELINE_LABEL.md model bỏ sót hoàn toàn.
+1,frame_0099.jpg,Xe con làn số 3 bật đèn pha trắng (x~600 y~650),added,Thiếu nhãn; xe 4 bánh có thân xe và 2 đèn pha rõ nét theo GUIDELINE_LABEL.md model không gán box.
+1,frame_0107.jpg,Box 12 trùng lặp với Box 4 (xe ở xa làn giữa),deleted,Dán sai/trùng; cả 2 box cùng khoanh một chiếc xe có đèn hậu đỏ ở xa (IoU=0.58) xoá box 12 theo quy tắc mỗi xe một box.
+1,frame_0107.jpg,Xe con làn trái bật đèn pha (x~260 y~525),added,Thiếu nhãn; xe đi tới giữa box 9 và box 6 có thân xe và đèn rõ ràng theo GUIDELINE_LABEL.md model bỏ sót.
+1,frame_0182.jpg,Box 12 trùng lặp với Box 8 (xe ở làn xa),deleted,Dán sai/trùng; 2 box AI cùng dán đè lên một xe ở xa (IoU=0.535) xoá box 12 để tránh trùng lặp theo GUIDELINE_LABEL.md.
+1,frame_0182.jpg,Xe con nhoè mờ ở góc dưới phải (x~800 y~950),added,Thiếu nhãn; theo GUIDELINE_LABEL.md Xe bị nhoè do chuyển động vẫn gán nhãn box ôm vùng nhoè của thân xe model bỏ sót.
+1,frame_0187.jpg,Box 13 vệt đèn đỏ trên dải phân cách mép phải,deleted,Dán sai (FP); chỉ là vệt sáng phản chiếu đèn trên rào chắn/mặt đường không có thân xe theo GUIDELINE_LABEL.md không gán nhãn.
+1,frame_0187.jpg,Hai xe con chạy song song làn giữa (x~380 và x~480),added,Thiếu nhãn; 2 xe chạy tới bật đèn pha sáng thấy rõ ranh giới thân xe theo GUIDELINE_LABEL.md model bỏ sót cả 2.
+1,frame_0227.jpg,Box 10 xe tải thùng lớn làn trái (x~357 y~417),edited,Dán lệch; box bị cắt cụt mất nửa thân dưới xe tải và gộp cả xe con phía sau cần chỉnh lại ôm sát thân xe tải theo GUIDELINE_LABEL.md.
+1,frame_0227.jpg,Box 12 đè phần nóc xe tải và xe phía sau,deleted,Dán sai/trùng; box bị dán đè lộn xộn lên box 10 tại khu vực sát nhau xoá box 12 và tách riêng từng xe.
+1,frame_0270.jpg,Xe tải thùng lớn ở làn giữa (x~390 y~630),added,Thiếu nhãn; xe tải chở hàng kích thước lớn nhìn rõ đầu xe đèn pha và thùng xe theo GUIDELINE_LABEL.md model bỏ sót hoàn toàn.
+1,frame_0270.jpg,SUV/xe con đen tiền cảnh làn phải (x~740 y~780),added,Thiếu nhãn; xe ở cự ly gần bật 2 đèn pha sáng rõ thân xe theo GUIDELINE_LABEL.md model bỏ sót.
+1,frame_0312.jpg,Xe container/đầu kéo rơ-moóc lớn làn giữa (x~510 y~440),added,Thiếu nhãn; xe container thùng trắng rất to di chuyển về phía xa thuộc lớp car theo GUIDELINE_LABEL.md model bỏ sót.
+1,frame_0312.jpg,Box 9 làn phải (x~801..984 y~377..474),edited,Dán lệch; box quá rộng bao trùm cả xe làn đường và dải phân cách trống cần thu gọn ôm sát thân xe theo GUIDELINE_LABEL.md.
+1,frame_0312.jpg,Box 10 trùng lặp với Box 4 (làn xa bên trái),deleted,Dán sai/trùng; 2 box cùng khoanh một xe con ở làn xa (IoU=0.500) xoá box 10 theo quy tắc mỗi xe một box.
+1,frame_0326.jpg,Xe con làn giữa sau box 10 (x~540 y~580),added,Thiếu nhãn; xe bật đèn pha sáng thấy rõ viền thân xe và kính lái theo GUIDELINE_LABEL.md model bỏ sót.
+1,frame_0326.jpg,Box 6 xe con màu trắng làn phải (x~996 y~463),edited,Dán lệch; box bị lệch xuống dưới cắt mất mui xe và dính bóng đổ mặt đường cần kéo box ôm khít thân xe theo GUIDELINE_LABEL.md.
+1,frame_0331.jpg,Box 4 và Box 19 cắt đôi xe sedan có 2 đèn hậu đỏ,edited,Dán lệch/cắt đôi xe; AI tách 1 xe thành 2 box nửa thân (box 19 và 4) cần xoá box 19 và chỉnh box 4 ôm trọn thân xe theo GUIDELINE_LABEL.md.
+1,frame_0331.jpg,Box 14 và Box 18 trùng với Box 15 (xe làn giữa x~490),deleted,Dán sai/trùng; AI vừa sinh box 15 vừa sinh thêm 2 box 14 và 18 cắt đôi cùng 1 chiếc xe xoá box 14 và 18 theo GUIDELINE_LABEL.md.
+1,frame_0369.jpg,Xe con màu đen làn giữa (x~530 y~580),added,Thiếu nhãn; thân xe tối nhưng đoán được đường viền quanh 2 đèn pha theo GUIDELINE_LABEL.md model bỏ sót.
+1,frame_0369.jpg,Hàng xe con làn trái sau box 11 (x~285 và x~275),added,Thiếu nhãn; các xe 4 bánh đang nối đuôi có đèn và thân xe nhìn rõ theo GUIDELINE_LABEL.md model bỏ sót.
+1,frame_0380.jpg,Xe tải/xe lớn màu trắng ở mép làn phải (x~980 y~600),added,Thiếu nhãn; phương tiện 4 bánh từ xe tải thuộc lớp car theo GUIDELINE_LABEL.md model bỏ sót.
+1,frame_0380.jpg,Box 11 trùng lặp với Box 3 (xe trắng làn phải),deleted,Dán sai/trùng; 2 box dán chồng lên cùng một xe ô tô trắng xoá box 11 để giữ đúng 1 box/xe theo GUIDELINE_LABEL.md.
+1,frame_0392.jpg,Cặp xe bị che khuất cuối đường sau box 4 (x~310 và x~360),added,Thiếu nhãn; đúng vị trí BLIND_SCAN.md đã nêu 2 xe bị che một phần nhưng thấy rõ đèn pha và kính theo GUIDELINE_LABEL.md.
+1,frame_0392.jpg,Xe buýt lớn cạnh box 12 (x~500 y~420),added,Thiếu nhãn; xe buýt chở khách lớn màu trắng đỏ thuộc lớp car theo GUIDELINE_LABEL.md model chỉ gán box 12 cho xe cạnh đó.
+1,frame_0392.jpg,Box 9 trùng lặp với Box 6 (bán tải/SUV làn giữa),deleted,Dán sai/trùng; 2 box cùng khoanh chiếc xe bán tải (IoU=0.523) xoá box 9 theo quy tắc không tạo box trùng lặp.
+1,frame_0392.jpg,Xe con tiền cảnh làn phải bật đèn pha (x~620 y~850),added,Thiếu nhãn; xe di chuyển tới ở cự ly gần thấy rõ thân xe và đèn theo GUIDELINE_LABEL.md model bỏ sót.
